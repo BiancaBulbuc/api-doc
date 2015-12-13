@@ -116,6 +116,198 @@ per\_page | 20 | How many stations per page to show
 offset | 0 |
 
 
+## Get Recent added Stations
+
+```shell
+curl "http://api.dirble.com/v2/stations/recent?token={your token}"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    id: 20604,
+    name: "538NL",
+    country: "NL",
+    image: {
+      url: "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
+      thumb: {
+      url: "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
+    }
+    },
+    slug: "538nl",
+    website: "http://www.538.nl/",
+    twitter: "",
+    facebook: "",
+    categories: [
+      {
+        id: 45,
+        title: "Variety",
+        description: "Variety or various, playing more or less everything.",
+        slug: "variety",
+        ancestry: "44"
+      }
+    ],
+    streams: [
+      {
+        stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
+        bitrate: 128,
+        content_type: "audio/mpeg",
+        status: 1
+      }
+    ],
+    created_at: "2015-12-13T14:19:14+01:00",
+    updated_at: "2015-12-13T14:23:50+01:00"
+  },
+  {
+    id: 20603,
+    name: "RTL Lounge Radio",
+    country: "NL",
+    image: {
+      url: "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
+      thumb: {
+      url: "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
+    }
+    },
+    slug: "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
+    website: "http://www.rtl.nl/rtl-lounge-radio/",
+    twitter: "",
+    facebook: "",
+    categories: [
+      {
+      id: 5,
+      title: "Pop",
+      description: "stations that normally play pop-music",
+      slug: "pop",
+      ancestry: null
+      }
+    ],
+    streams: [
+      {
+      stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
+      bitrate: 128,
+      content_type: "audio/mpeg",
+      status: 1
+      }
+    ],
+    created_at: "2015-12-13T14:13:55+01:00",
+    updated_at: "2015-12-13T14:19:45+01:00"
+  },
+  ...
+]
+```
+
+This endpoint retrieves all stations.
+
+### HTTP Request
+
+`GET http://api.dirble.com/v2/stations/recent`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+page | 0 | show which per_page stations to show
+per\_page | 20 | How many stations per page to show
+offset | 0 |
+
+## Get Popular Stations
+
+```shell
+curl "http://api.dirble.com/v2/stations/popular?token={your token}"
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    id: 20604,
+    name: "538NL",
+    country: "NL",
+    image: {
+      url: "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
+      thumb: {
+      url: "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
+    }
+    },
+    slug: "538nl",
+    website: "http://www.538.nl/",
+    twitter: "",
+    facebook: "",
+    categories: [
+      {
+        id: 45,
+        title: "Variety",
+        description: "Variety or various, playing more or less everything.",
+        slug: "variety",
+        ancestry: "44"
+      }
+    ],
+    streams: [
+      {
+        stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
+        bitrate: 128,
+        content_type: "audio/mpeg",
+        status: 1
+      }
+    ],
+    created_at: "2015-12-13T14:19:14+01:00",
+    updated_at: "2015-12-13T14:23:50+01:00"
+  },
+  {
+    id: 20603,
+    name: "RTL Lounge Radio",
+    country: "NL",
+    image: {
+      url: "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
+      thumb: {
+      url: "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
+    }
+    },
+    slug: "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
+    website: "http://www.rtl.nl/rtl-lounge-radio/",
+    twitter: "",
+    facebook: "",
+    categories: [
+      {
+      id: 5,
+      title: "Pop",
+      description: "stations that normally play pop-music",
+      slug: "pop",
+      ancestry: null
+      }
+    ],
+    streams: [
+      {
+      stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
+      bitrate: 128,
+      content_type: "audio/mpeg",
+      status: 1
+      }
+    ],
+    created_at: "2015-12-13T14:13:55+01:00",
+    updated_at: "2015-12-13T14:19:45+01:00"
+  },
+  ...
+]
+```
+
+This endpoint retrieves the top popular stations all time based on unique views and station detail api call.
+
+### HTTP Request
+
+`GET http://api.dirble.com/v2/stations/popular`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+page | 0 | show which per_page stations to show
+per\_page | 20 | How many stations per page to show
+offset | 0 |
+
 ## Get a Specific Station
 
 ```shell
@@ -196,6 +388,7 @@ website | No | URL to station website (starts with http://)
 country | Yes | Country name or code
 streams | Yes | array ([{"stream":"{stream url}"}]) of streams urls
 categories| Yes | array ([{"category":"{category id or title}"}]) of categories, can be ID or title
+logo | No | url to logo for the station
 
 ### Error messages
 It will give errors if the required parameters are wrong.
@@ -305,6 +498,76 @@ This endpoint retrieves song_history.
 Parameter | Description
 --------- | -----------
 ID | The ID of the station to get song_history from
+
+# Songs
+
+## Get Recent Played Songs
+
+```shell
+curl "http://api.dirble.com/v2/songs?token={your token}"
+```
+
+> The above command returns JSON structured like this:
+
+```JSON
+[
+  {
+    name: "Disclosure",
+    title: "White Noise",
+    week: 50,
+    year: 2015,
+    info: {
+    image: {
+      url: null,
+      thumb: {
+        url: null
+      },
+      preview: {
+        url: null
+      }
+    },
+    urls: {
+      spotify: "spotify:track:7mMaJKkvMKUB4KPtWjMQ8D"
+    }
+    },
+    station_id: 6544,
+    date: "2015-12-13T15:10:01+01:00"
+  },
+  {
+    name: "Rupert Holmes",
+    title: "Escape (Pina Colada Song)",
+    week: 50,
+    year: 2015,
+    info: {
+    image: {
+      url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/59166937.jpg",
+      thumb: {
+        url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/thumb_59166937.jpg"
+      },
+      preview: {
+        url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/preview_59166937.jpg"
+      }
+    },
+    urls: {
+      spotify: "spotify:track:79Dl8iYn0PFQG2wqDxPlQU"
+    }
+    },
+    station_id: 20591,
+    date: "2015-12-13T15:09:42+01:00"
+  },
+]
+```
+
+
+This endpoint retrieves all categories.
+
+### HTTP Request
+
+`GET http://api.dirble.com/v2/categories`
+
+### Query Parameters
+
+None parameters
 
 # Categories
 
@@ -899,16 +1162,34 @@ curl "http://api.dirble.com/v2/countries?token={your token}"
 ```json
 [
   {
-    "country_code": "DZ",
-    "Continent_id": 3
+    name: "Andorra",
+    country_code: "AD",
+    region: "Europe",
+    subregion: "Southern Europe"
   },
   {
-    "country_code": "AO",
-    "Continent_id": 3
+    name: "United Arab Emirates",
+    country_code: "AE",
+    region: "Asia",
+    subregion: "Western Asia"
   },
   {
-    "country_code": "BJ",
-    "Continent_id": 3
+    name: "Afghanistan",
+    country_code: "AF",
+    region: "Asia",
+    subregion: "Southern Asia"
+  },
+  {
+    name: "Antigua and Barbuda",
+    country_code: "AG",
+    region: "Americas",
+    subregion: "Caribbean"
+  },
+  {
+    name: "Anguilla",
+    country_code: "AI",
+    region: "Americas",
+    subregion: "Caribbean"
   },
   ...
 ]
@@ -936,34 +1217,34 @@ curl "http://api.dirble.com/v2/continents?token={your token}"
 ```json
 [
   {
-    "id": 1,
-    "name": "Europe",
-    "slug": "europe"
+    id: 1,
+    name: "Europe",
+    slug: "europe"
   },
   {
-    "id": 2,
-    "name": "Asia",
-    "slug": "asia"
+    id: 2,
+    name: "Asia",
+    slug: "asia"
   },
   {
-    "id": 3,
-    "name": "Africa",
-    "slug": "africa"
+    id: 3,
+    name: "Africa",
+    slug: "africa"
   },
   {
-    "id": 4,
-    "name": "North America",
-    "slug": "north-america"
+    id: 4,
+    name: "Northern America",
+    slug: "north-america"
   },
   {
-    "id": 5,
-    "name": "Oceania",
-    "slug": "oceania"
+    id: 5,
+    name: "Oceania",
+    slug: "oceania"
   },
   {
-    "id": 6,
-    "name": "South Amerika",
-    "slug": "south-amerika"
+    id: 6,
+    name: "South America",
+    slug: "south-amerika"
   }
 ]
 ```
@@ -989,24 +1270,22 @@ curl "http://api.dirble.com/v2/continents/1/countries?token={your token}"
 ```json
 [
   {
-    "country_code": "AL",
-    "Continent_id": 1
+    name: "Andorra",
+    country_code: "AD",
+    region: "Europe",
+    subregion: "Southern Europe"
   },
   {
-    "country_code": "AD",
-    "Continent_id": 1
+    name: "Albania",
+    country_code: "AL",
+    region: "Europe",
+    subregion: "Southern Europe"
   },
   {
-    "country_code": "AM",
-    "Continent_id": 1
-  },
-  {
-    "country_code": "AT",
-    "Continent_id": 1
-  },
-  {
-    "country_code": "BY",
-    "Continent_id": 1
+    name: "Austria",
+    country_code: "AT",
+    region: "Europe",
+    subregion: "Western Europe"
   },
   ...
 ]
