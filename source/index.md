@@ -127,72 +127,72 @@ curl "http://api.dirble.com/v2/stations/recent?token={your token}"
 ```json
 [
   {
-    id: 20604,
-    name: "538NL",
-    country: "NL",
-    image: {
-      url: "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
-      thumb: {
-      url: "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
-    }
+    "id": 20604,
+    "name": "538NL",
+    "country": "NL",
+    "image": {
+      "url": "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
+      "thumb": {
+        "url": "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
+      }
     },
-    slug: "538nl",
-    website: "http://www.538.nl/",
-    twitter: "",
-    facebook: "",
-    categories: [
+    "slug": "538nl",
+    "website": "http://www.538.nl/",
+    "twitter": "",
+    "facebook": "",
+    "categories": [
       {
-        id: 45,
-        title: "Variety",
-        description: "Variety or various, playing more or less everything.",
-        slug: "variety",
-        ancestry: "44"
+        "id": 45,
+        "title": "Variety",
+        "description": "Variety or various, playing more or less everything.",
+        "slug": "variety",
+        "ancestry": "44"
       }
     ],
-    streams: [
+    "streams": [
       {
-        stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
-        bitrate: 128,
-        content_type: "audio/mpeg",
-        status: 1
+        "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
+        "bitrate": 128,
+        "content_type": "audio/mpeg",
+        "status": 1
       }
     ],
-    created_at: "2015-12-13T14:19:14+01:00",
-    updated_at: "2015-12-13T14:23:50+01:00"
+    "created_at": "2015-12-13T14:19:14+01:00",
+    "updated_at": "2015-12-13T14:23:50+01:00"
   },
   {
-    id: 20603,
-    name: "RTL Lounge Radio",
-    country: "NL",
-    image: {
-      url: "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
-      thumb: {
-      url: "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
-    }
+    "id": 20603,
+    "name": "RTL Lounge Radio",
+    "country": "NL",
+    "image": {
+      "url": "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
+      "thumb": {
+        "url": "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
+      }
     },
-    slug: "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
-    website: "http://www.rtl.nl/rtl-lounge-radio/",
-    twitter: "",
-    facebook: "",
-    categories: [
+    "slug": "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
+    "website": "http://www.rtl.nl/rtl-lounge-radio/",
+    "twitter": "",
+    "facebook": "",
+    "categories": [
       {
-      id: 5,
-      title: "Pop",
-      description: "stations that normally play pop-music",
-      slug: "pop",
-      ancestry: null
+      "id": 5,
+      "title": "Pop",
+      "description": "stations that normally play pop-music",
+      "slug": "pop",
+      "ancestry": null
       }
     ],
-    streams: [
+    "streams": [
       {
-      stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
-      bitrate: 128,
-      content_type: "audio/mpeg",
-      status: 1
+      "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
+      "bitrate": 128,
+      "content_type": "audio/mpeg",
+      "status": 1
       }
     ],
-    created_at: "2015-12-13T14:13:55+01:00",
-    updated_at: "2015-12-13T14:19:45+01:00"
+    "created_at": "2015-12-13T14:13:55+01:00",
+    "updated_at": "2015-12-13T14:19:45+01:00"
   },
   ...
 ]
@@ -223,72 +223,72 @@ curl "http://api.dirble.com/v2/stations/popular?token={your token}"
 ```json
 [
   {
-    id: 20604,
-    name: "538NL",
-    country: "NL",
-    image: {
-      url: "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
-      thumb: {
-      url: "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
-    }
+    "id": 20604,
+    "name": "538NL",
+    "country": "NL",
+    "image": {
+      "url": "https://cdn.devality.com/station/20604/logo_radio538nl_640x300.jpg",
+      "thumb": {
+        "url": "https://cdn.devality.com/station/20604/thumb_logo_radio538nl_640x300.jpg"
+      }
     },
-    slug: "538nl",
-    website: "http://www.538.nl/",
-    twitter: "",
-    facebook: "",
-    categories: [
+    "slug": "538nl",
+    "website": "http://www.538.nl/",
+    "twitter": "",
+    "facebook": "",
+    "categories": [
       {
-        id: 45,
-        title: "Variety",
-        description: "Variety or various, playing more or less everything.",
-        slug: "variety",
-        ancestry: "44"
+        "id": 45,
+        "title": "Variety",
+        "description": "Variety or various, playing more or less everything.",
+        "slug": "variety",
+        "ancestry": "44"
       }
     ],
-    streams: [
+    "streams": [
       {
-        stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
-        bitrate: 128,
-        content_type: "audio/mpeg",
-        status: 1
+        "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
+        "bitrate": 128,
+        "content_type": "audio/mpeg",
+        "status": 1
       }
     ],
-    created_at: "2015-12-13T14:19:14+01:00",
-    updated_at: "2015-12-13T14:23:50+01:00"
+    "created_at": "2015-12-13T14:19:14+01:00",
+    "updated_at": "2015-12-13T14:23:50+01:00"
   },
   {
-    id: 20603,
-    name: "RTL Lounge Radio",
-    country: "NL",
-    image: {
-      url: "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
-      thumb: {
-      url: "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
-    }
+    "id": 20603,
+    "name": "RTL Lounge Radio",
+    "country": "NL",
+    "image": {
+      "url": "https://cdn.devality.com/station/20603/rtl-lounge-radio-logo.png",
+      "thumb": {
+        "url": "https://cdn.devality.com/station/20603/thumb_rtl-lounge-radio-logo.png"
+      }
     },
-    slug: "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
-    website: "http://www.rtl.nl/rtl-lounge-radio/",
-    twitter: "",
-    facebook: "",
-    categories: [
+    "slug": "rtl-lounge-radio-95538006-3eb0-4140-ac04-71cbe080407e",
+    "website": "http://www.rtl.nl/rtl-lounge-radio/",
+    "twitter": "",
+    "facebook": "",
+    "categories": [
       {
-      id: 5,
-      title: "Pop",
-      description: "stations that normally play pop-music",
-      slug: "pop",
-      ancestry: null
+      "id": 5,
+      "title": "Pop",
+      "description": "stations that normally play pop-music",
+      "slug": "pop",
+      "ancestry": null
       }
     ],
-    streams: [
+    "streams": [
       {
-      stream: "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
-      bitrate: 128,
-      content_type: "audio/mpeg",
-      status: 1
+      "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
+      "bitrate": 128,
+      "content_type": "audio/mpeg",
+      "status": 1
       }
     ],
-    created_at: "2015-12-13T14:13:55+01:00",
-    updated_at: "2015-12-13T14:19:45+01:00"
+    "created_at": "2015-12-13T14:13:55+01:00",
+    "updated_at": "2015-12-13T14:19:45+01:00"
   },
   ...
 ]
@@ -509,51 +509,51 @@ curl "http://api.dirble.com/v2/songs?token={your token}"
 
 > The above command returns JSON structured like this:
 
-```JSON
+```json
 [
   {
-    name: "Disclosure",
-    title: "White Noise",
-    week: 50,
-    year: 2015,
-    info: {
-    image: {
-      url: null,
-      thumb: {
-        url: null
+    "name": "Disclosure",
+    "title": "White Noise",
+    "week": 50,
+    "year": 2015,
+    "info": {
+    "image": {
+      "url": null,
+      "thumb": {
+        "url": null
       },
-      preview: {
-        url: null
+      "preview": {
+        "url": null
       }
     },
-    urls: {
-      spotify: "spotify:track:7mMaJKkvMKUB4KPtWjMQ8D"
+    "urls": {
+      "spotify": "spotify:track:7mMaJKkvMKUB4KPtWjMQ8D"
     }
     },
-    station_id: 6544,
-    date: "2015-12-13T15:10:01+01:00"
+    "station_id": 6544,
+    "date": "2015-12-13T15:10:01+01:00"
   },
   {
-    name: "Rupert Holmes",
-    title: "Escape (Pina Colada Song)",
-    week: 50,
-    year: 2015,
-    info: {
-    image: {
-      url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/59166937.jpg",
-      thumb: {
-        url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/thumb_59166937.jpg"
+    "name": "Rupert Holmes",
+    "title": "Escape (Pina Colada Song)",
+    "week": 50,
+    "year": 2015,
+    "info": {
+    "image": {
+      "url": "https://cdn.devality.com/albums/553b13ca6c6f634686721600/59166937.jpg",
+      "thumb": {
+        "url": "https://cdn.devality.com/albums/553b13ca6c6f634686721600/thumb_59166937.jpg"
       },
-      preview: {
-        url: "https://cdn.devality.com/albums/553b13ca6c6f634686721600/preview_59166937.jpg"
+      "preview": {
+        "url": "https://cdn.devality.com/albums/553b13ca6c6f634686721600/preview_59166937.jpg"
       }
     },
-    urls: {
-      spotify: "spotify:track:79Dl8iYn0PFQG2wqDxPlQU"
+    "urls": {
+      "spotify": "spotify:track:79Dl8iYn0PFQG2wqDxPlQU"
     }
     },
-    station_id: 20591,
-    date: "2015-12-13T15:09:42+01:00"
+    "station_id": 20591,
+    "date": "2015-12-13T15:09:42+01:00"
   },
 ]
 ```
