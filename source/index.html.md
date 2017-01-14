@@ -369,7 +369,7 @@ ID | The ID of the station to retrieve
 ## Create a Station
 
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"name": "WQUL 97.7 FM Marion, IL", "description": "97.7 The Bear - The Classic Rock Station", "categories": [{"category":"Rock"}], "streams": [{"stream":"http://a1577.l1989746511.c19897.g.lm.akamaistream.net/D/1577/19897/v0001/reflector:46511?MSWMExt=.asf"}], "country": "United States"}' 'http://api.dirble.com/v2/station/?token={your token}'
+curl -X POST -H "Content-Type: application/json" -d '{"name": "WQUL 97.7 FM Marion, IL", "description": "97.7 The Bear - The Classic Rock Station", "categories": [{"Rock"}], "streams": [{"http://a1577.l1989746511.c19897.g.lm.akamaistream.net/D/1577/19897/v0001/reflector:46511?MSWMExt=.asf"}], "country": "United States"}' 'http://api.dirble.com/v2/station/?token={your token}'
 ```
 
 This endpoint creates a Station
@@ -386,8 +386,8 @@ name | Yes | Station name
 Description | No | Description about station
 website | No | URL to station website (starts with http://)
 country | Yes | Country name or code
-streams | Yes | array ([{"stream":"{stream url}"}]) of streams urls
-categories| Yes | array ([{"category":"{category id or title}"}]) of categories, can be ID or title
+streams | Yes | array ([{"{stream url}"}]) of streams urls
+categories| Yes | array ([{"{category id or title}"}]) of categories, can be ID or title
 logo | No | url to logo for the station
 
 ### Error messages
