@@ -174,6 +174,7 @@ curl "http://api.dirble.com/v2/stations/recent?token={your token}"
     "website": "http://www.rtl.nl/rtl-lounge-radio/",
     "twitter": "",
     "facebook": "",
+    "total_listeners": 20,
     "categories": [
       {
       "id": 5,
@@ -188,6 +189,7 @@ curl "http://api.dirble.com/v2/stations/recent?token={your token}"
       "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
       "bitrate": 128,
       "content_type": "audio/mpeg",
+      "listeners": 10,
       "status": 1
       }
     ],
@@ -236,6 +238,7 @@ curl "http://api.dirble.com/v2/stations/popular?token={your token}"
     "website": "http://www.538.nl/",
     "twitter": "",
     "facebook": "",
+    "total_listeners": 20,
     "categories": [
       {
         "id": 45,
@@ -250,6 +253,7 @@ curl "http://api.dirble.com/v2/stations/popular?token={your token}"
         "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB06_MP3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1
       }
     ],
@@ -270,6 +274,7 @@ curl "http://api.dirble.com/v2/stations/popular?token={your token}"
     "website": "http://www.rtl.nl/rtl-lounge-radio/",
     "twitter": "",
     "facebook": "",
+    "total_listeners": 20,
     "categories": [
       {
       "id": 5,
@@ -284,6 +289,7 @@ curl "http://api.dirble.com/v2/stations/popular?token={your token}"
       "stream": "http://vip-icecast.538.lw.triple-it.nl:80/WEB08_MP3",
       "bitrate": 128,
       "content_type": "audio/mpeg",
+      "listeners": 10,
       "status": 1
       }
     ],
@@ -322,6 +328,7 @@ curl "http://api.dirble.com/v2/station/10?token={your token}"
   "name": "Sr P3",
   "country": "SE",
   "description": "",
+  "total_listeners": 20,
   "image": {
     "image": {
       "url": null,
@@ -337,6 +344,7 @@ curl "http://api.dirble.com/v2/station/10?token={your token}"
       "stream": "http://http-live.sr.se/p3-mp3-192",
       "bitrate": 0,
       "content_type": "?",
+      "listeners": 10,
       "status": 1
     }
   ],
@@ -410,6 +418,7 @@ curl "http://api.dirble.com/v2/station/10/similar?token={your token}"
     "name": "Sr P2",
     "description": "",
     "country": "SE",
+    "total_listeners": 20,
     "website": "http://www.sverigesradio.se",
     "image": {
       "url": "https://cdn.devality.com/station/181/original.png",
@@ -816,6 +825,7 @@ curl "http://api.dirble.com/v2/category/11/stations?token={your token}"
     "name": "iradiophilly Symphony",
     "country": "US",
     "description": "",
+    "total_listeners": 20,
     "image": {
       "image": {
         "url": "https://cdn.devality.com/station/12341/iradiophilly_logo_u_border.png",
@@ -833,6 +843,7 @@ curl "http://api.dirble.com/v2/category/11/stations?token={your token}"
         "stream": "http://kmr.iad.streamguys1.com:80/symphony",
         "bitrate": 60,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1
       }
     ],
@@ -870,11 +881,13 @@ curl "http://api.dirble.com/v2/category/11/stations?token={your token}"
     "website": "http://radiomunna.com",
     "created_at": "2015-03-14T20:51:45.000+01:00",
     "updated_at": "2015-04-11T14:19:55.000+02:00",
+    "total_listeners": 20,
     "streams": [
       {
         "stream": "http://77.92.64.44:8398/stream",
         "bitrate": 64,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1
       }
     ],
@@ -931,6 +944,7 @@ curl "http://api.dirble.com/v2/category/11/stations?token={your token}"
     "name": "Classic  Jazz Paris  France",
     "country": "FR",
     "description": "",
+    "total_listeners": 20,
     "image": {
       "image": {
         "url": null,
@@ -948,6 +962,7 @@ curl "http://api.dirble.com/v2/category/11/stations?token={your token}"
         "stream": "http://classicandjazz.ice.infomaniak.ch:80/classicandjazz-128.mp3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1
       }
     ],
@@ -1006,6 +1021,7 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
     "name": "Hotmusic  Super 936",
     "country": "NL",
     "description": "",
+    "total_listeners": 20,
     "image": {
       "image": {
         "url": null,
@@ -1022,7 +1038,8 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
       {
         "stream": "http://95.97.83.199:8000",
         "bitrate": 192,
-        "content_type": "audio/mpeg\r\n",
+        "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       }
     ],
@@ -1041,6 +1058,7 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
     "name": "Radio GFM",
     "country": "DE",
     "description": "",
+    "total_listeners": 30,
     "image": {
       "image": {
         "url": null,
@@ -1058,18 +1076,21 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
         "stream": "http://streams.radio-gfm.net:8000/metal.mp3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       },
       {
         "stream": "http://streams.radio-gfm.net:8000/electro.mp3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       },
       {
         "stream": "http://streams.radio-gfm.net:8000/rockpop.mp3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       }
     ],
@@ -1102,6 +1123,7 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
     "name": "Gotradio  Reggae",
     "country": "US",
     "description": "",
+    "total_listeners": 30,
     "image": {
       "image": {
         "url": null,
@@ -1118,7 +1140,8 @@ curl "http://api.dirble.com/v2/search/mental?token={your token}"
       {
         "stream": "http://173.244.215.163:8470",
         "bitrate": 128,
-        "content_type": "audio/mpeg\r\n",
+        "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       }
     ],
@@ -1162,34 +1185,34 @@ curl "http://api.dirble.com/v2/countries?token={your token}"
 ```json
 [
   {
-    name: "Andorra",
-    country_code: "AD",
-    region: "Europe",
-    subregion: "Southern Europe"
+    "name": "Andorra",
+    "country_code": "AD",
+    "region": "Europe",
+    "subregion": "Southern Europe"
   },
   {
-    name: "United Arab Emirates",
-    country_code: "AE",
-    region: "Asia",
-    subregion: "Western Asia"
+    "name": "United Arab Emirates",
+    "country_code": "AE",
+    "region": "Asia",
+    "subregion": "Western Asia"
   },
   {
-    name: "Afghanistan",
-    country_code: "AF",
-    region: "Asia",
-    subregion: "Southern Asia"
+    "name": "Afghanistan",
+    "country_code": "AF",
+    "region": "Asia",
+    "subregion": "Southern Asia"
   },
   {
-    name: "Antigua and Barbuda",
-    country_code: "AG",
-    region: "Americas",
-    subregion: "Caribbean"
+    "name": "Antigua and Barbuda",
+    "country_code": "AG",
+    "region": "Americas",
+    "subregion": "Caribbean"
   },
   {
-    name: "Anguilla",
-    country_code: "AI",
-    region: "Americas",
-    subregion: "Caribbean"
+    "name": "Anguilla",
+    "country_code": "AI",
+    "region": "Americas",
+    "subregion": "Caribbean"
   },
   ...
 ]
@@ -1322,6 +1345,7 @@ curl "http://api.dirble.com/v2/countries/SE/stations?token={your token}"
     "accepted": 1,
     "country": "SE",
     "description": "",
+    "total_listeners": 20,
     "image": {
       "image": {
         "url": null,
@@ -1339,12 +1363,14 @@ curl "http://api.dirble.com/v2/countries/SE/stations?token={your token}"
         "stream": "http://fire1.neradio.com",
         "bitrate": 128,
         "content_type": "audio/mpeg\r\n",
+        "listeners": 10,
         "status": 1,
       },
       {
         "stream": "http://fire2.neradio.com",
         "bitrate": 128,
         "content_type": "audio/mpeg\r\n",
+        "listeners": 10,
         "status": 1,
       }
     ],
@@ -1376,11 +1402,13 @@ curl "http://api.dirble.com/v2/countries/SE/stations?token={your token}"
     "website": "http://www.radioplay.se/nrj",
     "created_at": "2012-01-15T08:37:21.000+01:00",
     "updated_at": "2015-04-11T14:10:47.000+02:00",
+    "total_listeners": 20,
     "streams": [
       {
         "stream": "http://194.16.21.227/nrj_se_mp3",
         "bitrate": 128,
         "content_type": "audio/mpeg",
+        "listeners": 10,
         "status": 1,
       }
     ],
