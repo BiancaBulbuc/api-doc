@@ -377,10 +377,10 @@ ID | The ID of the station to retrieve
 ## Create a Station
 
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"name": "WQUL 97.7 FM Marion, IL", "description": "97.7 The Bear - The Classic Rock Station", "categories": [{"Rock"}], "streams": [{"http://a1577.l1989746511.c19897.g.lm.akamaistream.net/D/1577/19897/v0001/reflector:46511?MSWMExt=.asf"}], "country": "United States"}' 'http://api.dirble.com/v2/station/?token={your token}'
+curl -X POST -H "Content-Type: application/json" -d '{"name": "WQUL 97.7 FM Marion, IL", "description": "97.7 The Bear - The Classic Rock Station", "categories": ["Rock"], "streams": ["http://a1577.l1989746511.c19897.g.lm.akamaistream.net/D/1577/19897/v0001/reflector:46511?MSWMExt=.asf"], "country": "United States"}' 'http://api.dirble.com/v2/station/?token={your token}'
 ```
 
-This endpoint creates a Station
+This endpoint creates a Station, and will return it's object.
 
 ### HTTP Request
 
