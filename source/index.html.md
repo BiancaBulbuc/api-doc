@@ -1009,7 +1009,8 @@ offset | 0 |
 # Search
 
 ```shell
-curl "http://api.dirble.com/v2/search/mental?token={your token}"
+curl -X POST -H "Content-Type: application/json" -d '{"query": "*FM"}' 'http://api.dirble.com/v2/search?token={your token}'
+
 ```
 
 > The above command returns JSON structured like this:
@@ -1163,7 +1164,7 @@ This endpoint retrieves all stations of specific category.
 
 ### HTTP Request
 
-`GET http://api.dirble.com/v2/search/<query>`
+`POST http://api.dirble.com/v2/search`
 
 ### Query Parameters
 
@@ -1171,6 +1172,8 @@ Parameter | Default | Description
 --------- | ------- | -----------
 query | | (*Required*), the search query to search on
 page | 0 | show which 10 stations to show
+category | null | id for category to filter by
+country | null | alpha2 of country to filter by
 
 # Countries
 
